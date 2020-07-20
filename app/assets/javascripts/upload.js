@@ -5,7 +5,7 @@ $(document).on("change", "#file_photo", function(e) {
     reader.onload = function(e) {
       var userThumbnail;
       userThumbnail = document.getElementById('thumbnail');
-      $("userImgPreview").addClass("is-active");
+      $("#userImgPreview").addClass("is-active");
       userThumbnail.setAttribute('src', e.target.result);
     };
     return reader.readAsDataURL(e.target.files[0]);
