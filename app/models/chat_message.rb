@@ -1,6 +1,6 @@
 class ChatMessage < ApplicationRecord
 
   belongs_to :chat_room
-  belogns_to :user
+  belongs_to :user
 
 end
